@@ -15,7 +15,6 @@ export class App extends Component {
   }
 
   addNewUrl = (newUrl) => {
-    console.log(newUrl)
     fetch('http://localhost:3001/api/v1/urls', {
       method: 'POST', 
       headers: {
