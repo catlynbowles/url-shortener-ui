@@ -2,7 +2,7 @@ import React from 'react';
 import './UrlContainer.css';
 
 const UrlContainer = ({urls}) => {
-  console.log(urls)
+
   const urlEls = urls.map(url => {
     return (
       <div className="url">
