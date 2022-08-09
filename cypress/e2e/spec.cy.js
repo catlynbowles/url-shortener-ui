@@ -53,21 +53,21 @@ describe('URL Shortener', () => {
     cy.get('p').last().should('contain.text', 'https://depositphotos.com/stock-photos/peach-fruit.html')
   })
 
-  // it('Should let the user know if the server responds with a failed request', () => {
-  //   cy.intercept('http://localhost:3001/api/v1/urls', {forcedNetworkError: true})
-  //   cy.intercept('http://localhost:3001/api/v1/urls', {
-  //     statusCode: 400
-  //   })
-  //   cy.visit('http://localhost:3000/')
-  //   cy.get('.error').should('contain.text', 'Whoops, there\'s been an error')
-  // })
+  it('Should let the user know if the server responds with a failed request', () => {
+    cy.intercept('http://localhost:3001/api/v1/urls', {forcedNetworkError: true})
+    cy.intercept('http://localhost:3001/api/v1/urls', {
+      statusCode: 400
+    })
+    cy.visit('http://localhost:3000/')
+    cy.get('.error').should('contain.text', 'Whoops, there\'s been an error')
+  })
 
-  // it('Should let the user know if the server responds with a 500 error', () => {
-  //   cy.intercept('http://localhost:3001/api/v1/urls', {forcedNetworkError: true})
-  //   cy.intercept('http://localhost:3001/api/v1/urls', {
-  //     statusCode: 500
-  //   })
-  //   cy.visit('http://localhost:3000/')
-  //   cy.get('.error').should('contain.text', 'Whoops, there\'s been an error')
-  // })
+  it('Should let the user know if the server responds with a 500 error', () => {
+    cy.intercept('http://localhost:3001/api/v1/urls', {forcedNetworkError: true})
+    cy.intercept('http://localhost:3001/api/v1/urls', {
+      statusCode: 500
+    })
+    cy.visit('http://localhost:3000/')
+    cy.get('.error').should('contain.text', 'Whoops, there\'s been an error')
+  })
 })
