@@ -1,0 +1,16 @@
+{
+  "urls": [
+    {
+      "id": 1,
+      "long_url": "https://images.unsplash.com/photo-1531898418865-480b7090470f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+      "short_url": "http://localhost:3001/useshorturl/1",
+      "title": "Awesome photo"
+    },
+    {
+      "long_url": "https://www.istockphoto.com/photo/humpback-whale-playfully-swimming-in-clear-blue-ocean-gm1301667498-393646692?utm_source=unsplash&utm_medium=affiliate&utm_campaign=category_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fimages%2Fanimals%2Fwhale&utm_term=whale%3A%3A%3A",
+      "title": "Whale",
+      "id": 3,
+      "short_url": "http://localhost:3001/useshorturl/3"
+    }
+  ]
+}
